@@ -6,12 +6,103 @@
 
 body {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
     font-weight: 400;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    padding: 24px 40px;
+    font-size: 1.2rem;
+}
+
+img {
+    border-radius: 16px;
+  
+    height: auto;
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 24px 0px;
+}
+
+/* Header and Navbar */
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    padding: 4px 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > * {
+    padding: 80px 0px;
+}
+
+/* Sections */
+
+section:nth-child(n + 2) {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+section:not(.profile-container) {
+    padding: 0px 40px;
+}
+
+section p {
+    padding: 8px 0px;
+}
+
+.profile-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.profile-content {
+    display: flex;
+    width: 80%;
+}
+
+.profile-text {
+    align-self: center;
+    padding: 0px 24px;
+}
+
+/* Footer */
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer-links > * {
+    padding: 4px 8px;
 }
