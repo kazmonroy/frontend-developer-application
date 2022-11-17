@@ -20,7 +20,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-    padding: 24px 40px;
     font-size: 1.2rem;
     height: 100vh;
 }
@@ -42,14 +41,29 @@ a {
     color: var(--black);
 }
 
+i {
+    pointer-events: none;
+}
+
 /* Header and Navbar */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.burger-menu, .fa-bars {
+    display: none;
+    cursor: pointer;
+}
 
 nav {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 0px 40px;
 }
 
 .nav-links {
@@ -69,7 +83,6 @@ main {
 }
 
 /* Sections */
-
 
 section p {
     padding: 16px 0px;
@@ -91,9 +104,12 @@ section {
     min-height: 80vh;
 }
 
-
 section:nth-child(n + 2) p {
     width: 80%;
+}
+
+section:nth-child(n + 2) h1 {
+    text-align: center;
 }
 
 section:nth-child(2n + 2) {
@@ -104,33 +120,25 @@ section:nth-child(2n + 2) h1 {
     color: var(--white);
 }
 
-section:not(.profile-container) {
-    padding: 0px 40px;
-}
-
 .profile-container {
     min-height: 60vh;
     width: 100%;
-    /* min-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh; */
 }
 
 .profile-content {
     display: flex;
-    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 24px;
+    max-width: 850px;
 }
 
 .profile-text {
     align-self: center;
-    padding: 0px 40px;
+    padding-right: 24px;
 }
 
-.cover-letter {
-    height: 90vh;
-}
 
 /* Footer */
 
@@ -142,4 +150,43 @@ section:not(.profile-container) {
 
 .footer-links > * {
     padding: 16px;
+}
+
+
+
+@media (max-width: 750px) {
+
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 32px 0px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FBDA68;
+        width: 100%;
+        height: 100%;
+        transform: translate(400px);
+        transition: all .25s ease-in-out;
+    }
+
+    .nav-links.show {
+        transform: translate(0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+
+    }
+
+    .burger-menu, .fa-bars {
+        display: inline-block;
+    }
+    
 }
