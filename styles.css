@@ -2,7 +2,6 @@
     --black: black;
     --yellow: #FBDA68;
     --white: rgb(255, 255, 255);
-
 }
 
 * {
@@ -59,8 +58,6 @@ a::before {
     transform-origin: left;
     transform: scaleX(1);
   }
-
-
 
 i {
     pointer-events: none;
@@ -164,7 +161,6 @@ section:nth-child(2n + 2) h1 {
     padding-right: 24px;
 }
 
-
 /* Footer */
 
 .footer-links {
@@ -176,8 +172,6 @@ section:nth-child(2n + 2) h1 {
 .footer-links > * {
     padding: 16px;
 }
-
-
 
 @media (max-width: 750px) {
 
@@ -207,7 +201,6 @@ section:nth-child(2n + 2) h1 {
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
-
     }
 
     .burger-menu, .fa-bars {
