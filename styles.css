@@ -35,6 +35,7 @@ h1 {
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: var(--black);
     position: relative;
