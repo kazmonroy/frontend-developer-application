@@ -64,10 +64,6 @@ i {
     pointer-events: none;
 }
 
-.yellow {
-    color: var(--yellow);
-}
-
 /* Header and Navbar */
 
 header {
