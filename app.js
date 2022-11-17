@@ -8,5 +8,7 @@ burgerMenu.addEventListener('click', () => {
 
 navMenu.addEventListener('click', (e) => {
   let link = e.target;
-  link.tagName === 'A' ? navMenu.classList.toggle('show') : '';
+  link.tagName === 'A' || link.tagName === 'UL'
+    ? navMenu.classList.toggle('show')
+    : '';
 });
