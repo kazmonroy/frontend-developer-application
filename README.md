@@ -1,2 +1,1 @@
-# frontend-developer-application
-Sundsgårdens Folkhögskola: Frontend Developer Application
+# Sundsgårdens Folkhögskola: Frontend Developer Application
